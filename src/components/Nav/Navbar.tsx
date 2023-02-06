@@ -2,10 +2,7 @@ import React, { useState } from 'react';
 import './navbar.css';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import { Link } from 'react-router-dom';
-const routerLinkStyles: { textDecoration: string; color: string } = {
-  textDecoration: 'none',
-  color: 'black',
-};
+import { routerLinkStyles } from '../utilis';
 const Navbar = () => {
   return (
     <div className="navbar">

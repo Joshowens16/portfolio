@@ -1,5 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './homepage.css';
+import { routerLinkStyles } from '../utilis';
+
 const HomePage = () => {
   return (
     <div className="homepageContainer">
@@ -10,7 +13,9 @@ const HomePage = () => {
       <div id="name">Josh Owens</div>
       <p>I build full stack applications using TypeScript, React, and Express.</p>
       <div id="learnAboutMe">
-        <button>Learn more about me &rarr;</button>
+        <Link to="/about" style={routerLinkStyles}>
+          <button>Learn more about me &rarr;</button>
+        </Link>
       </div>
     </div>
   );

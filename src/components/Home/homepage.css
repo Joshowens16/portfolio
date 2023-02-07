@@ -15,7 +15,12 @@ body{
     padding: 12px;
 }
 #headshot img{
+    width: 150px;
+    height: 150px;
+    object-fit:cover;
+    object-position:0% 25%;
     border-radius: 50%;
+    border: 5px solid #3c82f6;
 }
 #intro{
     font-size: 36px;

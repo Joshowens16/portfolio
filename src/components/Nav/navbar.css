@@ -11,7 +11,7 @@ body{
     align-items: center;
     padding: 10px;
     width: 60vw;
-    border-bottom: 2px solid #3c82f6;
+    border-bottom: 2px solid #CC5500;
 }
 #name {
     display: flex;
@@ -24,13 +24,13 @@ body{
     font-size: 20px;
     color: black;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #3c82f6; /* The typwriter cursor */
+    border-right: .15em solid #CC5500; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .1em; /* Adjust as needed */
     animation: 
-      typing 1.5s steps(10, end),
-      blink-caret .75s step-end infinite;
+      typing 1.5s steps(12, end),
+      blink-caret 1s step-end infinite;
 }
 #buttons{
 font-family: 'Montserrat', sans-serif;
@@ -74,5 +74,5 @@ margin-right: 80px;
   /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: #3c82f6; }
+    50% { border-color: #CC5500; }
   }

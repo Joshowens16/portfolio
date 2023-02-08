@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap');
 
+
 body{
     font-family: 'Montserrat', sans-serif;
 }
@@ -20,7 +21,7 @@ body{
     object-fit:cover;
     object-position:0% 25%;
     border-radius: 50%;
-    border: 5px solid #3c82f6;
+    border: 3px solid #CC5500;
 }
 #intro{
     font-size: 36px;
@@ -28,7 +29,7 @@ body{
     font-weight: bolder;
 }
 #name{
-    color: #3c82f6;
+    color: #CC5500;
     font-size: 48px;
     font-weight: bolder;
 }

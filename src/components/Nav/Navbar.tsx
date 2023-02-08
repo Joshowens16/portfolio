@@ -7,7 +7,9 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div id="name">
-        <h1>Josh Owens </h1>
+        <Link to="/" style={{ textDecoration: 'none' }}>
+          <h1>Josh Owens </h1>
+        </Link>
       </div>
       <div id="buttons">
         <Link to="/" style={routerLinkStyles}>

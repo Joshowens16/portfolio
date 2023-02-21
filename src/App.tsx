@@ -20,11 +20,14 @@ function App() {
       const preferredViewMode = JSON.parse(lsViewMode);
       if (preferredViewMode === 'dark') {
         dispatch(setDarkMode(true));
+        return;
       } else {
         dispatch(setDarkMode(false));
+        return;
       }
     } else {
       dispatch(setDarkMode(false));
+      return;
     }
   };
   useEffect(() => {

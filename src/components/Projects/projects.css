@@ -1,0 +1,42 @@
+.projectsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 96px;
+    min-height: 50vh;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    width: 900px;
+    margin-bottom: 40px;
+  }
+  .projectsContainer h1{
+    margin: 0 0 48px;
+    padding: 0;
+  }
+  .projects{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+  }
+  .projects img{
+    width: 300px;
+  }
+  .projects h2{
+    padding: 12px;
+    margin-bottom: 0;
+  }
+  .projects p {
+    padding: 12px;
+    margin-top: 0;
+  }
+  .links{
+    display: flex;
+    flex-direction: column;
+    gap: 4px
+  }
+  .links a {
+    color: black;
+    padding: 12px;
+  }

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './homepage.css';
 import { routerLinkStyles } from '../utilis';
+import { motion } from 'framer-motion';
 
 const HomePage = () => {
   return (

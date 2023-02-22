@@ -9,8 +9,8 @@ const About = () => {
       <h1>About Me</h1>
       <h2>Hi, I'm Josh Owens</h2>
       <p>
-        I am a full stack developer from California. I first became interseted in programming in 2021, when I came
-        across some open source resources to get started in the web development world. I became fasinated with web
+        I am a full stack developer from California. I first became interested in programming in 2021, when I came
+        across some open source resources to get started in the web development world. I became fascinated with web
         development, creating responsive applications with HTML and CSS, as well as interactive user experiences using
         JavaScript. This led me down a path of seriously considering software development as a career.
       </p>
@@ -27,13 +27,13 @@ const About = () => {
           Fullstack Academy
         </a>
         . Here I was able to dive completely into the world of creating full stack web applications. I learned to create
-        back end database's and servers using Express and PostgreSQL. I learned to creat interactive and responsive
+        back end database's and servers using Express and PostgreSQL. I learned to create interactive and responsive
         front end applications using React and Redux.
       </p>
       &nbsp;
       <p>
-        Aside from software development, I enjoy playing the accoustic and electric guitar, reading, and hiking. I was
-        also an NCAA Division 1 swimmer while purusing my undergraduate degree. I enjoy giving back to the world of
+        Aside from software development, I enjoy playing the acoustic and electric guitar, reading, and hiking. I was
+        also an NCAA Division 1 swimmer while pursuing my undergraduate degree. I enjoy giving back to the world of
         swimming, so each summer I coach a recreation swim team.
       </p>
       <div id="myProjects">

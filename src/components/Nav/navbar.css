@@ -65,6 +65,10 @@ margin-right: 80px;
 	font: inherit;
 	outline: inherit;
 }
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
 /* The typing effect */
 @keyframes typing {
     from { width: 0 }

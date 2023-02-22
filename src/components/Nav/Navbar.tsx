@@ -3,6 +3,7 @@ import './navbar.css';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import { Link } from 'react-router-dom';
 import { routerLinkStyles } from '../utilis';
+import Josh_Owens_Resume from '../../../public/JOSH_OWENS-RESUME.pdf';
 const Navbar = () => {
   return (
     <div className="navbar">
@@ -21,7 +22,9 @@ const Navbar = () => {
         <Link to="projects" style={routerLinkStyles}>
           <button>Projects</button>
         </Link>
-        <button>Resume</button>
+        <a href={Josh_Owens_Resume} target="_blank">
+          <button>Resume</button>
+        </a>
       </div>
       <div id="viewmode">
         <button>

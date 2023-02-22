@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './about.css';
 import { routerLinkStyles } from '../utilis';
-const frontEnd = ['HTML & CSS', 'JavaScript', 'TypeScript', 'React', 'Redux', 'Material UI', 'Bootstrap'];
-const backEnd = ['Node', 'Express', 'PostgreSQL', 'Sequelize', 'SQL'];
-const other = ['Firebase', 'Git', 'Webpack'];
+const frontEnd: string[] = ['HTML & CSS', 'JavaScript', 'TypeScript', 'React', 'Redux', 'Material UI', 'Bootstrap'];
+const backEnd: string[] = ['Node', 'Express', 'PostgreSQL', 'Sequelize', 'SQL'];
+const other: string[] = ['Firebase', 'Git', 'Webpack'];
 const About = () => {
   return (
     <div className="aboutContainer">

@@ -34,9 +34,19 @@
   .links{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 4px
   }
   .links a {
+    margin-left: 8px;
+    padding: 8px;
+    width: fit-content;
+    height: fit-content;
     color: black;
-    padding: 12px;
+    text-decoration: none;
+  }
+  .links a:hover{
+    color: #cc5500;
+    font-weight: 500;
+    text-decoration: underline;
   }

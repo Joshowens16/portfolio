@@ -10,23 +10,24 @@
   width: 900px;
   margin-bottom: 40px;
 }
-.aboutContainer h1 {
+.aboutContainer h1{
   margin: 0;
   width: 90%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 20px;
 }
+.aboutMe{
+    width: 90%;
+}
 .aboutContainer h2 {
   font-weight: 100;
   align-self: baseline;
   justify-self: baseline;
-  margin-left: 40px;
   opacity: 0.5;
 }
 .aboutContainer p {
   align-items: flex-start;
   justify-self: flex-start;
-  margin: 0 40px 0;
   line-height: 30px;
 }
 .aboutContainer a {
@@ -52,3 +53,27 @@
   -webkit-transition: all 0.8s ease;
   cursor: pointer;
 }
+.technical{
+    width: 90%;
+}
+.technical h1{
+    margin: 0;
+    width: 90%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+    margin-top: 40px;
+  }
+  .technical li {
+    padding: 1px
+  }
+  .technical ul{
+    list-style: none;
+  }  
+  .technical ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #CC5500; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }

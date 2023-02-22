@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap');
-
+html { overflow-y: scroll;}
+  
 .homepageContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 96px;
-  min-height: 50vh;
-  border-left: 1px solid rgba(0, 0, 0, 0.1);
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 12px;
-  width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 96px;
+    min-height: 50vh;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    width: 900px;
+    margin-bottom: 40px;
 }
 #headshot img {
   width: 150px;

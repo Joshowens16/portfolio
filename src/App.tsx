@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { Route, Routes } from 'react-router';
 import About from './components/About/About';
+import Footer from './components/Footer/Footer';
 import HomePage from './components/Home/HomePage';
 import Navbar from './components/Nav/Navbar';
 import Projects from './components/Projects/Projects';
@@ -15,6 +16,7 @@ function App() {
         <Route path={'/about'} element={<About />} />
         <Route path={'/projects'} element={<Projects />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

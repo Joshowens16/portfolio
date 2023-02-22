@@ -1,9 +1,10 @@
-body{
-background-color: rgba(232, 232, 232, 0.559);
-/* background-color: rgb(67, 67, 67); */
-
-user-select: none;
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(232, 232, 232, 0.559);
+  font-family: 'Montserrat', sans-serif;
+  user-select: none;
 }
-.mainContainer{
-
+.mainContainer {
 }

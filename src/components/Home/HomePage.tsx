@@ -2,12 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './homepage.css';
 import { routerLinkStyles } from '../utilis';
+import joHS from '../../assets/JOheadshot.png';
 
 const HomePage = () => {
   return (
     <div className="homepageContainer">
       <div id="headshot">
-        <img src="src/assets/sharpen_IMG-0908.PNG"></img>
+        <img src={joHS}></img>
       </div>
       <div id="intro">Hello, I'm</div>
       <div id="name">Josh Owens</div>

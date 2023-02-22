@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './about.css';
 import { routerLinkStyles } from '../utilis';
-import joHS from '../../assets/JOheadshot.png';
 
 const About = () => {
   return (

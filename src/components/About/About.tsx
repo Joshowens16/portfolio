@@ -39,13 +39,13 @@ const About = () => {
       </div>
       <div className="technical">
         <h1>Technical Skills</h1>
-        <h2>Front end</h2>
+        <h2>Front-End</h2>
         <ul>
           {frontEnd.map((skill) => {
             return <li>{skill}</li>;
           })}
         </ul>
-        <h2>Back end</h2>
+        <h2>Back-End</h2>
         <ul>
           {backEnd.map((skill) => {
             return <li>{skill}</li>;

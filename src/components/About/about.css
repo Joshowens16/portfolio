@@ -77,3 +77,7 @@
     width: 1em; /* Also needed for space (tweak if needed) */
     margin-left: -1em; /* Also needed for space (tweak if needed) */
   }
+  i{
+    font-size: 5rem;
+    margin: 8px;
+  }

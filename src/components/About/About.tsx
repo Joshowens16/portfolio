@@ -2,11 +2,30 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './about.css';
 import { routerLinkStyles } from '../utilis';
-import { motion } from 'framer-motion';
+import InfiniteScroll from 'react-infinite-scroller';
 
-const frontEnd: string[] = ['HTML & CSS', 'JavaScript', 'TypeScript', 'React', 'Redux', 'Material UI', 'Bootstrap'];
-const backEnd: string[] = ['Node', 'Express', 'PostgreSQL', 'Sequelize', 'SQL'];
-const other: string[] = ['Firebase', 'Git', 'Webpack'];
+const frontEnd: any[] = [
+  <i className="devicon-html5-plain-wordmark colored"></i>,
+  <i className="devicon-css3-plain-wordmark colored"></i>,
+  <i className="devicon-javascript-plain colored"></i>,
+  <i className="devicon-typescript-plain colored"></i>,
+  <i className="devicon-react-original-wordmark colored"></i>,
+  <i className="devicon-redux-original colored"></i>,
+  <i className="devicon-materialui-plain colored"></i>,
+  <i className="devicon-bootstrap-plain-wordmark colored"></i>,
+];
+const backEnd: any[] = [
+  <i className="devicon-nodejs-plain-wordmark colored"></i>,
+  <i className="devicon-express-original-wordmark colored"></i>,
+  <i className="devicon-postgresql-plain-wordmark colored"></i>,
+  <i className="devicon-sequelize-plain-wordmark colored"></i>,
+];
+const other: any[] = [
+  <i className="devicon-firebase-plain-wordmark colored"></i>,
+  <i className="devicon-git-plain-wordmark colored"></i>,
+  <i className="devicon-github-original-wordmark colored"></i>,
+  <i className="devicon-webpack-plain colored"></i>,
+];
 
 const About = () => {
   return (
@@ -43,23 +62,19 @@ const About = () => {
       <div className="technical">
         <h1>Technical Skills</h1>
         <h2>Front-End</h2>
-        <ul>
+        <div className="frontend">
           {frontEnd.map((skill) => {
-            return <li>{skill}</li>;
+            return skill;
           })}
-        </ul>
+        </div>
         <h2>Back-End</h2>
-        <ul>
-          {backEnd.map((skill) => {
-            return <li>{skill}</li>;
-          })}
-        </ul>
+        {backEnd.map((skill) => {
+          return skill;
+        })}
         <h2>Other</h2>
-        <ul>
-          {other.map((skill) => {
-            return <li>{skill}</li>;
-          })}
-        </ul>
+        {other.map((skill) => {
+          return skill;
+        })}
       </div>
       <div id="myProjects">
         <Link to="/projects" style={routerLinkStyles}>

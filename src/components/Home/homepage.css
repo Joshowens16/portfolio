@@ -47,6 +47,7 @@ html { overflow-y: scroll;}
 #learnAboutMe button:hover {
   cursor: pointer;
   background-color: rgb(211, 211, 211, 0.7);
+  /* background-color: white; */
   transition: all 0.8s ease;
   -webkit-transition: all 0.8s ease;
   cursor: pointer;

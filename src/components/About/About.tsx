@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import './about.css';
 import { routerLinkStyles } from '../utilis';
 import InfiniteScroll from 'react-infinite-scroller';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../store';
 
 const frontEnd: any[] = [
   <i className="devicon-html5-plain-wordmark colored"></i>,
@@ -28,10 +30,11 @@ const other: any[] = [
 ];
 
 const About = () => {
+  const { darkMode } = useSelector((state: RootState) => state.viewMode);
   return (
-    <div className="aboutContainer">
+    <div className={!darkMode ? 'aboutContainerLight' : 'aboutContainerDark'}>
       <h1>About Me</h1>
-      <div className="aboutMe">
+      <div className={!darkMode ? 'aboutMeLight' : 'aboutMeDark'}>
         <h2>Hi, I'm Josh Owens</h2>
         <p>
           I am a full stack developer from California. I first became interested in programming in 2021, when I came

@@ -1,4 +1,4 @@
-.aboutContainer {
+.aboutContainerLight {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,14 +9,38 @@
   padding: 12px;
   width: 900px;
 }
-.aboutContainer h1{
+.aboutContainerDark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 96px;
+  min-height: 50vh;
+  /* border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1); */
+  padding: 12px;
+  width: 900px;
+}
+.aboutContainerLight h1 {
   margin: 0;
   width: 90%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 20px;
+  color: black;
 }
-.aboutMe{
-    width: 90%;
+.aboutContainerDark h1 {
+  margin: 0;
+  width: 90%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 20px;
+  color: white;
+}
+.aboutMeLight {
+  width: 90%;
+  color: black;
+}
+.aboutMeDark {
+  width: 90%;
+  color: white;
 }
 .aboutContainer h2 {
   font-weight: 100;
@@ -52,31 +76,31 @@
   -webkit-transition: all 0.8s ease;
   cursor: pointer;
 }
-.technical{
-    width: 90%;
+.technical {
+  width: 90%;
 }
-.technical h1{
-    margin: 0;
-    width: 90%;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding-bottom: 20px;
-    margin-top: 40px;
-  }
-  .technical li {
-    padding: 1px
-  }
-  .technical ul{
-    list-style: none;
-  }  
-  .technical ul li::before {
-    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: #CC5500; /* Change the color */
-    font-weight: bold; /* If you want it to be bold */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1em; /* Also needed for space (tweak if needed) */
-    margin-left: -1em; /* Also needed for space (tweak if needed) */
-  }
-  i{
-    font-size: 5rem;
-    margin: 8px;
-  }
+.technical h1 {
+  margin: 0;
+  width: 90%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 20px;
+  margin-top: 40px;
+}
+.technical li {
+  padding: 1px;
+}
+.technical ul {
+  list-style: none;
+}
+.technical ul li::before {
+  content: '\2022'; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #cc5500; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+i {
+  font-size: 5rem;
+  margin: 8px;
+}

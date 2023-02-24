@@ -33,11 +33,7 @@ const Navbar = () => {
               <button>Resume</button>
             </a>
           </div>
-          <div id="viewmode">
-            <button>
-              <DarkModeIcon />
-            </button>
-          </div>
+          <div id="viewmode"></div>
         </div>
       ) : (
         <RepsoniveNavButtons />

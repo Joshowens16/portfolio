@@ -13,6 +13,9 @@ body {
   width: 60vw;
   border-bottom: 2px solid #cc5500;
 }
+.lightNavbar a {
+  color: black;
+}
 .darkNavbar {
   display: flex;
   flex-direction: row;
@@ -21,7 +24,10 @@ body {
   align-items: center;
   padding: 10px;
   width: 60vw;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #cc5500;
+}
+.darkNavbar a {
+  color: white;
 }
 
 .responsive {
@@ -31,6 +37,7 @@ body {
   align-items: center;
   flex-grow: 0.7;
 }
+
 @media screen and (max-width: 800px) {
   .navbar {
     display: flex;
@@ -43,16 +50,27 @@ body {
     border-bottom: 2px solid #cc5500;
   }
 }
-#name {
+.lightNavbar #name {
   display: flex;
   flex-direction: row;
   margin: 0;
   padding: 0;
 }
-#name h1 {
+.lightNavbar #name h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   color: black;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #cc5500; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.1em; /* Adjust as needed */
+  animation: typing 1.5s steps(12, end), blink-caret 1s step-end infinite;
+}
+.darkNavbar #name h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: white;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid #cc5500; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
@@ -70,7 +88,7 @@ body {
   margin-right: 80px;
   gap: 8px;
 }
-#buttons button,
+.lightNavbar #buttons button,
 input[type='submit'],
 input[type='reset'] {
   background: none;
@@ -82,6 +100,21 @@ input[type='reset'] {
   padding: 8px;
   font: inherit;
   outline: inherit;
+  color: black;
+}
+.darkNavbar #buttons button,
+input[type='submit'],
+input[type='reset'] {
+  background: none;
+  color: inherit;
+  white-space: nowrap;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 8px;
+  font: inherit;
+  outline: inherit;
+  color: white;
 }
 #buttons button:hover {
   background-color: rgb(211, 211, 211, 0.7);

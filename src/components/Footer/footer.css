@@ -1,65 +1,70 @@
-.outerContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
+.outerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
 }
-.footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 48px;
-    padding: 12px;
-    width: 400px;
-    border-top: 1px solid #CC5500;
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 48px;
+  padding: 12px;
+  width: 400px;
+  border-top: 1px solid #cc5500;
 }
-.icons{
-    display: flex;
-    height: 50px;
-    gap: 30px;
+.icons {
+  display: flex;
+  height: 50px;
+  gap: 30px;
 }
-.icons a{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    text-decoration: none;
-    color: inherit;
-    margin: 0;
-    padding: 0;
-    width: 35px;
+.icons a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  width: 35px;
 }
-.footerInfo{
-    font-size: 12px;
+.footerInfoLight {
+  color: black;
+  font-size: 12px;
 }
-.icons :nth-child(1):hover::after{
-    font-size: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    transition: all 2s ease;
-    -webkit-transition: all 2s ease;
-    content: 'Github';
+.footerInfoDark {
+  color: white;
+  font-size: 12px;
 }
-.icons :nth-child(2):hover::after{
-    font-size: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    transition: all 2s ease;
-    -webkit-transition: all 2s ease;
-    content: 'Email';
+.icons :nth-child(1):hover::after {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 2s ease;
+  -webkit-transition: all 2s ease;
+  content: 'Github';
 }
-.icons :nth-child(3):hover::after{
-    font-size: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    transition: all 2s ease;
-    -webkit-transition: all 2s ease;
-    content: 'LinkedIn';
+.icons :nth-child(2):hover::after {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 2s ease;
+  -webkit-transition: all 2s ease;
+  content: 'Email';
+}
+.icons :nth-child(3):hover::after {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 2s ease;
+  -webkit-transition: all 2s ease;
+  content: 'LinkedIn';
 }

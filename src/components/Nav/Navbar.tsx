@@ -32,7 +32,7 @@ const Navbar = () => {
       </div>
       {!isSmallScreen ? (
         <div className="responsive">
-          <div id="buttons">
+          <div id={!darkMode ? 'buttons' : 'darkButtons'}>
             <Link to="/" style={routerLinkStyles}>
               <button>Home</button>
             </Link>
@@ -49,7 +49,7 @@ const Navbar = () => {
               <button>Resume</button>
             </a>
           </div>
-          <div id="viewmode">
+          <div id={!darkMode ? 'viewmode' : 'darkViewMode'}>
             <button onClick={handleViewChange}>
               {!darkMode ? <DarkModeIcon /> : <LightModeIcon sx={{ color: 'white' }} />}
             </button>

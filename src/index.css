@@ -21,6 +21,7 @@ html {
   justify-content: center;
   height: 100%;
   width: 100%;
+  transition: background-color 0.5s ease;
   background-color: rgba(232, 232, 232, 0.559);
 }
 .mainContainerDark {
@@ -30,5 +31,6 @@ html {
   justify-content: center;
   height: 100%;
   width: 100%;
+  transition: background-color 0.5s ease;
   background-color: #35363a;
 }

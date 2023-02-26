@@ -88,6 +88,14 @@ html {
   -webkit-transition: all 0.8s ease;
   cursor: pointer;
 }
+#learnAboutMeDark button:hover {
+  cursor: pointer;
+  background-color: rgba(211, 211, 211, 0.181);
+  /* background-color: white; */
+  transition: all 0.8s ease;
+  -webkit-transition: all 0.8s ease;
+  cursor: pointer;
+}
 .pLight {
   color: black;
 }

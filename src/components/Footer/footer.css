@@ -30,6 +30,22 @@
   padding: 0;
   width: 35px;
 }
+.iconsDark {
+  display: flex;
+  height: 50px;
+  gap: 30px;
+}
+.iconsDark a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  width: 35px;
+}
 .footerInfoLight {
   color: black;
   font-size: 12px;
@@ -67,4 +83,37 @@
   transition: all 2s ease;
   -webkit-transition: all 2s ease;
   content: 'LinkedIn';
+}
+.iconsDark :nth-child(1):hover::after {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 2s ease;
+  -webkit-transition: all 2s ease;
+  content: 'Github';
+  color: white;
+}
+.iconsDark :nth-child(2):hover::after {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 2s ease;
+  -webkit-transition: all 2s ease;
+  content: 'Email';
+  color: white;
+}
+.iconsDark :nth-child(3):hover::after {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 2s ease;
+  -webkit-transition: all 2s ease;
+  content: 'LinkedIn';
+  color: white;
 }

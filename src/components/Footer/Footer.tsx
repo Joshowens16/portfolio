@@ -11,7 +11,7 @@ const Footer = () => {
     <div className="outerContainer">
       <div className="footer">
         <div>
-          <div className="icons">
+          <div className={!darkMode ? 'icons' : 'iconsDark'}>
             <a target="_blank" href="https://github.com/Joshowens16">
               <GitHubIcon sx={!darkMode ? { color: 'black' } : { color: 'white' }} />
             </a>

@@ -88,6 +88,16 @@ body {
   margin-right: 80px;
   gap: 8px;
 }
+#darkButtons {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 8px;
+  width: 20rem;
+  margin-right: 80px;
+  gap: 8px;
+}
 .lightNavbar #buttons button,
 input[type='submit'],
 input[type='reset'] {
@@ -102,7 +112,7 @@ input[type='reset'] {
   outline: inherit;
   color: black;
 }
-.darkNavbar #buttons button,
+.darkNavbar #darkButtons button,
 input[type='submit'],
 input[type='reset'] {
   background: none;
@@ -122,6 +132,12 @@ input[type='reset'] {
   -webkit-transition: all 0.8s ease;
   cursor: pointer;
 }
+#darkButtons button:hover {
+  background-color: rgba(211, 211, 211, 0.181);
+  transition: all 0.8s ease;
+  -webkit-transition: all 0.8s ease;
+  cursor: pointer;
+}
 #viewmode {
   display: flex;
   margin-left: 100px;
@@ -129,13 +145,46 @@ input[type='reset'] {
 #viewmode button,
 input[type='submit'],
 input[type='reset'] {
+  display: flex;
+  padding: 4px;
+  justify-content: center;
+  align-items: center;
   background: none;
   color: inherit;
   border: 1px solid transparent;
-  border-radius: 10px;
-  padding: 8px;
+  border-radius: 50%;
   font: inherit;
   outline: inherit;
+}
+#viewmode button:hover {
+  background-color: rgb(211, 211, 211, 0.7);
+  transition: all 0.8s ease;
+  -webkit-transition: all 0.8s ease;
+  cursor: pointer;
+}
+#darkViewMode {
+  display: flex;
+  margin-left: 100px;
+}
+#darkViewMode button,
+input[type='submit'],
+input[type='reset'] {
+  display: flex;
+  padding: 4px;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  font: inherit;
+  outline: inherit;
+}
+#darkViewMode button:hover {
+  background-color: rgba(211, 211, 211, 0.181);
+  transition: all 0.8s ease;
+  -webkit-transition: all 0.8s ease;
+  cursor: pointer;
 }
 .navbar a {
   text-decoration: none;

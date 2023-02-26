@@ -62,7 +62,7 @@ const About = () => {
           swimming, so each summer I coach a recreation swim team.
         </p>
       </div>
-      <div className="technical">
+      <div className={!darkMode ? 'technicalLight' : 'technicalDark'}>
         <h1>Technical Skills</h1>
         <h2>Front-End</h2>
         <div className="frontend">
@@ -70,16 +70,18 @@ const About = () => {
             return skill;
           })}
         </div>
-        <h2>Back-End</h2>
-        {backEnd.map((skill) => {
-          return skill;
-        })}
+        <div className={!darkMode ? 'backendLight' : 'backendDark'}>
+          <h2>Back-End</h2>
+          {backEnd.map((skill) => {
+            return skill;
+          })}
+        </div>
         <h2>Other</h2>
         {other.map((skill) => {
           return skill;
         })}
       </div>
-      <div id="myProjects">
+      <div id={!darkMode ? 'myProjects' : 'darkMyProjects'}>
         <Link to="/projects" style={routerLinkStyles}>
           <button>Check out my projects &rarr;</button>
         </Link>

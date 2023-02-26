@@ -2,9 +2,13 @@ import React from 'react';
 import { Card } from '@mui/material';
 import projects from './ProjectsInfo';
 import './projects.css';
+import { useDispatch, useSelector } from 'react-redux';
+import { RootState } from '../../store';
 const Projects = () => {
+  const { darkMode } = useSelector((state: RootState) => state.viewMode);
+
   return (
-    <div className="projectsContainer">
+    <div className={!darkMode ? 'projectsContainer' : 'projectsContainerDark'}>
       <h1>Projects</h1>
       <div className="projects">
         {projects.map((project) => {

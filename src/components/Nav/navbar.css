@@ -1,105 +1,212 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-body{
-    display: flex;
-    justify-content: center;
+body {
+  display: flex;
+  justify-content: center;
 }
-.navbar{
+.lightNavbar {
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid black; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 60vw;
+  border-bottom: 2px solid #cc5500;
+}
+.lightNavbar a {
+  color: black;
+}
+.darkNavbar {
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid black; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 60vw;
+  border-bottom: 2px solid #cc5500;
+}
+.darkNavbar a {
+  color: white;
+}
+
+.responsive {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 0.7;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar {
     display: flex;
     flex-direction: row;
     /* border: 1px solid black; */
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    width: 60vw;
-    border-bottom: 2px solid #CC5500;
+    width: fit-content;
+    border-bottom: 2px solid #cc5500;
+  }
 }
-.responsive{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-grow: .7;
+.lightNavbar #name {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
 }
-@media screen and (max-width: 800px) {
-    .navbar{
-        display: flex;
-        flex-direction: row;
-        /* border: 1px solid black; */
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px;
-        width: fit-content;
-        border-bottom: 2px solid #CC5500;
-    }
+.lightNavbar #name h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: black;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #cc5500; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.1em; /* Adjust as needed */
+  animation: typing 1.5s steps(12, end), blink-caret 1s step-end infinite;
 }
-#name {
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
+.darkNavbar #name h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: white;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #cc5500; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.1em; /* Adjust as needed */
+  animation: typing 1.5s steps(12, end), blink-caret 1s step-end infinite;
 }
-#name h1{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    color: black;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #CC5500; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .1em; /* Adjust as needed */
-    animation: 
-      typing 1.5s steps(12, end),
-      blink-caret 1s step-end infinite;
+#buttons {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 8px;
+  width: 20rem;
+  margin-right: 80px;
+  gap: 8px;
 }
-#buttons{
-font-family: 'Montserrat', sans-serif;
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-padding: 8px;
-width: 20rem;
-margin-right: 80px;
+#darkButtons {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 8px;
+  width: 20rem;
+  margin-right: 80px;
+  gap: 8px;
 }
-#buttons button, input[type="submit"], input[type="reset"] {
-	background: none;
-	color: inherit;
-	border: 1px solid transparent;
-    border-radius: 10px;
-	padding: 8px;
-	font: inherit;
-	outline: inherit;
+.lightNavbar #buttons button,
+input[type='submit'],
+input[type='reset'] {
+  background: none;
+  color: inherit;
+  white-space: nowrap;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 8px;
+  font: inherit;
+  outline: inherit;
+  color: black;
 }
-#buttons button:hover{
-	background-color: rgb(211, 211, 211,0.7);
-    transition: all .8s ease;
-    -webkit-transition: all .8s ease;
-	cursor:pointer;
+.darkNavbar #darkButtons button,
+input[type='submit'],
+input[type='reset'] {
+  background: none;
+  color: inherit;
+  white-space: nowrap;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 8px;
+  font: inherit;
+  outline: inherit;
+  color: white;
 }
-#viewmode{
-    display: flex;
-    margin-left: 100px;
+#buttons button:hover {
+  background-color: rgb(211, 211, 211, 0.7);
+  transition: all 0.8s ease;
+  -webkit-transition: all 0.8s ease;
+  cursor: pointer;
 }
-#viewmode button, input[type="submit"], input[type="reset"] {
-	background: none;
-	color: inherit;
-	border: 1px solid transparent;
-    border-radius: 10px;
-	padding: 8px;
-	font: inherit;
-	outline: inherit;
+#darkButtons button:hover {
+  background-color: rgba(211, 211, 211, 0.181);
+  transition: all 0.8s ease;
+  -webkit-transition: all 0.8s ease;
+  cursor: pointer;
 }
-.navbar a{
-    text-decoration: none;
-    color: black;
+#viewmode {
+  display: flex;
+  margin-left: 100px;
+}
+#viewmode button,
+input[type='submit'],
+input[type='reset'] {
+  display: flex;
+  padding: 4px;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  font: inherit;
+  outline: inherit;
+}
+#viewmode button:hover {
+  background-color: rgb(211, 211, 211, 0.7);
+  transition: all 0.8s ease;
+  -webkit-transition: all 0.8s ease;
+  cursor: pointer;
+}
+#darkViewMode {
+  display: flex;
+  margin-left: 100px;
+}
+#darkViewMode button,
+input[type='submit'],
+input[type='reset'] {
+  display: flex;
+  padding: 4px;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  font: inherit;
+  outline: inherit;
+}
+#darkViewMode button:hover {
+  background-color: rgba(211, 211, 211, 0.181);
+  transition: all 0.8s ease;
+  -webkit-transition: all 0.8s ease;
+  cursor: pointer;
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
 }
 /* The typing effect */
 @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+  from {
+    width: 0;
   }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #CC5500; }
+  to {
+    width: 100%;
   }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #cc5500;
+  }
+}

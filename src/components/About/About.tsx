@@ -6,7 +6,7 @@ import InfiniteScroll from 'react-infinite-scroller';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../store';
 
-const frontEnd: any[] = [
+const frontEnd: React.ReactElement[] = [
   <i className="devicon-html5-plain-wordmark colored"></i>,
   <i className="devicon-css3-plain-wordmark colored"></i>,
   <i className="devicon-javascript-plain colored"></i>,
@@ -16,13 +16,13 @@ const frontEnd: any[] = [
   <i className="devicon-materialui-plain colored"></i>,
   <i className="devicon-bootstrap-plain-wordmark colored"></i>,
 ];
-const backEnd: any[] = [
+const backEnd: React.ReactElement[] = [
   <i className="devicon-nodejs-plain-wordmark colored"></i>,
   <i className="devicon-express-original-wordmark colored"></i>,
   <i className="devicon-postgresql-plain-wordmark colored"></i>,
   <i className="devicon-sequelize-plain-wordmark colored"></i>,
 ];
-const other: any[] = [
+const other: React.ReactElement[] = [
   <i className="devicon-firebase-plain-wordmark colored"></i>,
   <i className="devicon-git-plain-wordmark colored"></i>,
   <i className="devicon-github-original-wordmark colored"></i>,

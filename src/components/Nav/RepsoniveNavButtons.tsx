@@ -55,7 +55,7 @@ const RepsoniveNavButtons = () => {
         aria-haspopup="true"
         onClick={handleToggle}
       >
-        <MenuIcon />
+        <MenuIcon style={!darkMode ? { color: 'black' } : { color: 'white' }} />
       </IconButton>
       <Popper
         open={open}
@@ -80,13 +80,13 @@ const RepsoniveNavButtons = () => {
                   aria-labelledby="composition-button"
                   onKeyDown={handleListKeyDown}
                 >
-                  <Link to="/">
+                  <Link to="/" style={{ color: 'black', textDecoration: 'none' }}>
                     <MenuItem onClick={handleClose}>Home</MenuItem>
                   </Link>
-                  <Link to="/about">
+                  <Link to="/about" style={{ color: 'black', textDecoration: 'none' }}>
                     <MenuItem onClick={handleClose}>About</MenuItem>
                   </Link>
-                  <Link to="/projects">
+                  <Link to="/projects" style={{ color: 'black', textDecoration: 'none' }}>
                     <MenuItem onClick={handleClose}>Projects</MenuItem>
                   </Link>
                   <MenuItem onClick={handleClose}>Resume</MenuItem>

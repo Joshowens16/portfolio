@@ -38,18 +38,6 @@ body {
   flex-grow: 0.7;
 }
 
-@media screen and (max-width: 800px) {
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    /* border: 1px solid black; */
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    width: fit-content;
-    border-bottom: 2px solid #cc5500;
-  }
-}
 .lightNavbar #name {
   display: flex;
   flex-direction: row;
@@ -208,5 +196,47 @@ input[type='reset'] {
   }
   50% {
     border-color: #cc5500;
+  }
+}
+@media screen and (max-width: 800px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: fit-content;
+    border-bottom: 2px solid #cc5500;
+  }
+  .darkNavbar {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100vw;
+    border-bottom: 1px solid #cc5500;
+  }
+  .lightNavbar {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 90vw;
+    border-bottom: px solid #cc5500;
+  }
+  .darkNavbar {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 90vw;
+    border-bottom: 2px solid #cc5500;
   }
 }

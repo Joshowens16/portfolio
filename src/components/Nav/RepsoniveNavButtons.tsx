@@ -2,9 +2,17 @@ import React from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import { ClickAwayListener, Grow, IconButton, MenuItem, MenuList, Paper, Popper } from '@mui/material';
 import { Link } from 'react-router-dom';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+import LightModeIcon from '@mui/icons-material/LightMode';
+import { RootState } from '../../store';
+import { useDispatch, useSelector } from 'react-redux';
+import { setDarkMode } from '../../store/viewSlice';
+import './responsive.css';
 const RepsoniveNavButtons = () => {
+  const dispatch = useDispatch();
   const [open, setOpen] = React.useState<boolean>(false);
   const anchorRef = React.useRef<HTMLButtonElement>(null);
+  const { darkMode } = useSelector((state: RootState) => state.viewMode);
   const handleClose = (event: Event | React.SyntheticEvent) => {
     if (anchorRef.current && anchorRef.current.contains(event.target as HTMLElement)) {
       return;
@@ -23,9 +31,22 @@ const RepsoniveNavButtons = () => {
   const handleToggle = () => {
     setOpen((prevOpen) => !prevOpen);
   };
+  const handleViewChange = () => {
+    if (darkMode) {
+      dispatch(setDarkMode(false));
+      return;
+    }
+    dispatch(setDarkMode(true));
+    return;
+  };
 
   return (
-    <div>
+    <div className="responsiveNav">
+      <div id={!darkMode ? 'viewmode' : 'darkViewMode'}>
+        <button onClick={handleViewChange}>
+          {!darkMode ? <DarkModeIcon /> : <LightModeIcon sx={{ color: 'white' }} />}
+        </button>
+      </div>
       <IconButton
         ref={anchorRef}
         id="composition-button"

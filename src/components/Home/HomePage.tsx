@@ -15,9 +15,9 @@ const HomePage = () => {
       </div>
       <div id={!darkMode ? 'introLight' : 'introDark'}>Hello, I'm</div>
       <div id="nameLight">Josh Owens</div>
-      <p className={!darkMode ? 'pLight' : 'pDark'}>
-        I build full stack applications using TypeScript, React, and Express.
-      </p>
+      <div className={!darkMode ? 'pLight' : 'pDark'}>
+        <p>I build full stack applications using TypeScript, React, and Express.</p>
+      </div>
       <div id={!darkMode ? 'learnAboutMeLight' : 'learnAboutMeDark'}>
         <Link to="/about" style={routerLinkStyles}>
           <button>Learn more about me &rarr;</button>

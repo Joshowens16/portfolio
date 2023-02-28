@@ -102,3 +102,63 @@ html {
 .pDark {
   color: white;
 }
+@media screen and (max-width: 600px) {
+  .homepageContainerLight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 96px;
+    min-height: 50vh;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    width: 90vw;
+    margin-bottom: 40px;
+  }
+  .homepageContainerDark {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 96px;
+    min-height: 50vh;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    width: 90vw;
+    margin-bottom: 40px;
+  }
+  #introLight {
+    font-size: 1rem;
+    margin-top: 36px;
+    font-weight: bolder;
+    color: black;
+  }
+  #introDark {
+    font-size: 1rem;
+    margin-top: 36px;
+    font-weight: bolder;
+    color: white;
+  }
+  #nameLight {
+    color: #cc5500;
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+  .pLight {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    color: black;
+  }
+  .pLight p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    color: black;
+  }
+  .pDark {
+    color: white;
+  }
+}

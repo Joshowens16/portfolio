@@ -70,16 +70,18 @@ const About = () => {
             return skill;
           })}
         </div>
+        <h2>Back-End</h2>
         <div className={!darkMode ? 'backendLight' : 'backendDark'}>
-          <h2>Back-End</h2>
           {backEnd.map((skill) => {
             return skill;
           })}
         </div>
         <h2>Other</h2>
-        {other.map((skill) => {
-          return skill;
-        })}
+        <div className="other">
+          {other.map((skill) => {
+            return skill;
+          })}
+        </div>
       </div>
       <div id={!darkMode ? 'myProjects' : 'darkMyProjects'}>
         <Link to="/projects" style={routerLinkStyles}>

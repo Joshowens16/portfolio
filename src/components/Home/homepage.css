@@ -12,6 +12,7 @@ html {
   padding: 12px;
   width: 900px;
   margin-bottom: 40px;
+  transition: color 1.5s ease;
 }
 .homepageContainerDark {
   display: flex;
@@ -22,6 +23,7 @@ html {
   padding: 12px;
   width: 900px;
   margin-bottom: 40px;
+  transition: color 1.5s ease;
 }
 #headshot img {
   width: 150px;
@@ -35,6 +37,8 @@ html {
   font-size: 36px;
   margin-top: 36px;
   font-weight: bolder;
+  transition: color 1.5s ease;
+
   color: black;
 }
 #introDark {
@@ -42,6 +46,7 @@ html {
   margin-top: 36px;
   font-weight: bolder;
   color: white;
+  transition: color 1.5s ease;
 }
 #nameLight {
   color: #cc5500;
@@ -61,6 +66,7 @@ html {
   font: inherit;
   outline: inherit;
   color: black;
+  transition: color 1.5s ease;
 }
 #learnAboutMeDark button {
   display: flex;
@@ -75,6 +81,7 @@ html {
   font: inherit;
   outline: inherit;
   color: white;
+  transition: color 1.5s ease;
 }
 #learnAboutMeLight button:hover {
   cursor: pointer;
@@ -94,9 +101,11 @@ html {
 }
 .pLight {
   color: black;
+  transition: color 1.5s ease;
 }
 .pDark {
   color: white;
+  transition: color 1.5s ease;
 }
 @media screen and (max-width: 600px) {
   .homepageContainerLight {

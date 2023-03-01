@@ -26,6 +26,7 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 20px;
   color: black;
+  transition: color 1.5s ease;
 }
 .aboutContainerDark h1 {
   margin: 0;
@@ -33,20 +34,25 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.53);
   padding-bottom: 20px;
   color: white;
+  transition: color 1.5s ease;
 }
 .aboutMeLight {
   width: 90%;
   color: black;
+  transition: color 1.5s ease;
 }
 .aboutMeLight a {
   color: black;
+  transition: color 1.5s ease;
 }
 .aboutMeDark {
   width: 90%;
   color: white;
+  transition: color 1.5s ease;
 }
 .aboutMeDark a {
   color: white;
+  transition: color 1.5s ease;
 }
 .aboutContainer h2 {
   font-weight: 100;
@@ -87,6 +93,7 @@
   font: inherit;
   outline: inherit;
   color: white;
+  transition: color 1.5s ease;
 }
 #darkMyProjects button:hover {
   cursor: pointer;
@@ -105,6 +112,7 @@
 .technicalLight {
   color: black;
   width: 90%;
+  transition: color 1.5s ease;
 }
 .technicalDark {
   color: white;

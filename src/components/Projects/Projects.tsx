@@ -13,19 +13,23 @@ const Projects = () => {
       <div className="projects">
         {projects.map((project) => {
           return (
-            <Card sx={{ width: '300px', display: 'flex', flexDirection: 'column', height: 'fit-content' }}>
-              <img src={project.image} />
-              <h2>{project.title}</h2>
-              <p>{project.description}</p>
-              <div className="links">
-                <a target="_blank" href={project.github}>
-                  Github &rarr;
-                </a>
-                <a target="_blank" href={project.live}>
-                  Site &rarr;
-                </a>
+            <div className={!darkMode ? 'lightProject' : 'darkProject'}>
+              <div className="titleAndImg">
+                <h2>{project.title}</h2>
+                <img src={project.image} />
               </div>
-            </Card>
+              <div className="description">
+                <p>{project.description}</p>
+                <div className="links">
+                  <a target="_blank" href={project.github}>
+                    Github &rarr;
+                  </a>
+                  <a target="_blank" href={project.live}>
+                    Site &rarr;
+                  </a>
+                </div>
+              </div>
+            </div>
           );
         })}
       </div>

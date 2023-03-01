@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
 import { Route, Routes } from 'react-router';
 import About from './components/About/About';
@@ -8,10 +8,28 @@ import Navbar from './components/Nav/Navbar';
 import Projects from './components/Projects/Projects';
 import './index.css';
 import ContactMe from './components/ContactMe/ContactMe';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from './store';
+import { setDarkMode } from './store/viewSlice';
 function App() {
   const { darkMode } = useSelector((state: RootState) => state.viewMode);
+  const dispatch = useDispatch();
+  const setSavedViewMode = () => {
+    const lsViewMode = localStorage.getItem('viewMode');
+    if (lsViewMode) {
+      const preferredViewMode = JSON.parse(lsViewMode);
+      if (preferredViewMode === 'dark') {
+        dispatch(setDarkMode(true));
+      } else {
+        dispatch(setDarkMode(false));
+      }
+    } else {
+      dispatch(setDarkMode(false));
+    }
+  };
+  useEffect(() => {
+    setSavedViewMode();
+  }, []);
   return (
     <div className={!darkMode ? 'mainContainerLight' : 'mainContainerDark'}>
       <Navbar />

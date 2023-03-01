@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './homepage.css';
 import { routerLinkStyles } from '../utilis';
@@ -8,6 +8,8 @@ import { RootState } from '../../store';
 
 const HomePage = () => {
   const { darkMode } = useSelector((state: RootState) => state.viewMode);
+
+  useEffect(() => {}, []);
   return (
     <div className={!darkMode ? 'homepageContainerLight' : 'homepageContainerDark'}>
       <div id="headshot">

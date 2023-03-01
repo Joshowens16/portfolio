@@ -18,9 +18,13 @@ const Navbar = () => {
   const handleViewChange = () => {
     if (darkMode) {
       dispatch(setDarkMode(false));
+      const viewMode = JSON.stringify('light');
+      localStorage.setItem('viewMode', viewMode);
       return;
     }
     dispatch(setDarkMode(true));
+    const viewMode = JSON.stringify('dark');
+    localStorage.setItem('viewMode', viewMode);
     return;
   };
   return (

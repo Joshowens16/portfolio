@@ -53,8 +53,8 @@ const About = () => {
             Fullstack Academy
           </a>
           . Here I was able to dive completely into the world of creating full stack web applications. I learned to
-          create back end database's and servers using Express and PostgreSQL. I learned to create interactive and
-          responsive front end applications using React and Redux.
+          create back end database's and servers using Express and PostgreSQL and to create interactive and responsive
+          front end applications using React and Redux.
         </p>
         <p>
           Aside from software development, I enjoy playing the acoustic and electric guitar, reading, and hiking. I was
